@@ -8,9 +8,9 @@ const path = require('path');
 // Налаштування Commander.js
 program
     // Обов'язкові аргументи
-    .requiredOption('-i, --input <path>', 'шлях до файлу JSON для читання') [cite: 37, 41]
-    .requiredOption('-h, --host <address>', 'адреса сервера (наприклад, localhost або 0.0.0.0)') [cite: 38, 41]
-    .requiredOption('-p, --port <number>', 'порт сервера (наприклад, 3000)', parseInt) [cite: 39, 41]
+    .requiredOption('-i, --input <path>', 'шлях до файлу JSON для читання')
+    .requiredOption('-h, --host <address>', 'адреса сервера (наприклад, localhost або 0.0.0.0)') 
+    .requiredOption('-p, --port <number>', 'порт сервера (наприклад, 3000)', parseInt)
     .parse(process.argv);
 
 const options = program.opts();
